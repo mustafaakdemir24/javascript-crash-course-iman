@@ -1,22 +1,5 @@
-let userEmail = `mustafa.akdemir24@gmail.com`;
-let age = 45;
-let name = `Mustafa`;
+let age = 18;
 
-age = 46;
-
-// console.log(age);
-
-const points = 100;
-
-// console.log(points);
-
-// Currency Converter
-
-// $AUD to $USD Formula:
-
-// AUD = USD * 1.5
-
-let USD = 1200;
-let AUD = USD * 1.5;
-
-console.log(AUD);
+if (age > 18) {
+  console.log(`You may enter the club`);
+}
