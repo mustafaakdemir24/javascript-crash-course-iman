@@ -1,6 +1,8 @@
-let age = 18;
-let hasId = false;
+// let counter = 1;
 
-if (``) {
-  console.log(`You may enter the club!`);
-}
+// while (counter <= 20) {
+//   console.log(counter);
+//   counter += 1;
+// }
+
+// For Loop
