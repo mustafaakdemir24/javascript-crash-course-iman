@@ -1,8 +1,6 @@
-let counter = 1;
-
-while (counter <= 20) {
-  console.log(counter);
-  counter += 1;
-}
-
 // For Loop
+
+for(let i=0; i < 5; i++) {
+  console.log(i);
+  
+}
