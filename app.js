@@ -1,5 +1,6 @@
-str = `ASAP Frontend`;
-
-for (let i = 0; i < str.length; i++) {
-  console.log(str[i]);
+function sum() {
+  return 11;
+  console.log(`Hello World!`);  
 }
+
+console.log(main());
