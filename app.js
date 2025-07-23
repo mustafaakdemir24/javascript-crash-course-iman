@@ -1,11 +1,8 @@
-// Regular Function
-// function convertUsdToAud(USD) {
-//   return USD * 1.5;
-// }
+let array = [20, 15, 10, 30];
 
-// Arrow Function
-const convertUsdToAud = (USD) => {
-  return USD * 1.5;
-}
+// Array methods
+let filteredArray = array.filter((element) => {
+  return element <= 15;
+});
 
-console.log(convertUsdToAud(1000));
+console.log(filteredArray);
