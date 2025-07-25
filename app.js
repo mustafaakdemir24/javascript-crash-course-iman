@@ -1,3 +1,5 @@
-let array = [1, 2, 3, 4, 5];
+usDollars = [10, 20, 30, 40];
 
-array.map((element) => {});
+const auDollars = usDollars.map((usDollar) => usDollar * 1.5);
+
+console.log(auDollars);
