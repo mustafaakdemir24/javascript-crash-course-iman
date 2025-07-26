@@ -1,23 +1,53 @@
-usDollars1 = [10, 20, 30, 40];
-usDollars2 = [100, 150, 35];
+let user = [
+  {
+    email: `example@gmail.com`,
+    password: `test1234`,
+    name: `John Doe`,
+    discord: `examplediscord`,
+    subscription: `VPI+`,
+    lessonCompleted: [1, 2, 3],
+  },
+  {
+    email: `inamuser@gmail.com`,
+    password: `test1234`,
+    name: `Iman Musa`,
+    discord: `imancodes`,
+    subscription: `VPI+`,
+    lessonCompleted: [1, 2, 3, 4, 5],
+  },
+];
 
-const auDollars1 = usDollars1.map((usDollar) => usDollar * 1.5);
-const auDollars2 = usDollars2.map((usDollar) => usDollar * 1.5);
+console.log(user[0].email);
 
-console.log(auDollars1);
-console.log(auDollars2);
+console.log(user[0].name[0]);
 
-const convertToAuDollars = (usDollar) => {
-  const auDollar = Array();
-  for (let i = 0; i < usDollar.length; i++) {
-    auDollar[i] = usDollar[i] * 1.5;
-  }
+console.log(user[0].lessonCompleted.map((lesson) => lesson * 3));
 
-  return auDollar;
+const addUser = (
+  email,
+  password,
+  name,
+  discord,
+  subscription,
+  lessonCompleted
+) => {
+  user.push({
+    email: email,
+    password: password,
+    name: name,
+    discord: discord,
+    subscription: subscription,
+    lessonCompleted: lessonCompleted,
+  });
 };
 
-const auDollar3 = convertToAuDollars(usDollars1);
-const auDollar4 = convertToAuDollars(usDollars2);
+addUser(
+  `mustafa.akdemir24@gmail.com`,
+  `Tes1234`,
+  `Mustafa Akdemir`,
+  `mustafaakdemir24`,
+  `VPI+`,
+  [1, 2, 3, 4]
+);
 
-console.log(auDollar3);
-console.log(auDollar4);
+console.log(user[2].name);
