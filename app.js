@@ -1,4 +1,4 @@
-let user = [
+let users = [
   {
     email: `example@gmail.com`,
     password: `test1234`,
@@ -17,37 +17,23 @@ let user = [
   },
 ];
 
-console.log(user[0].email);
+console.log(users[0].email);
 
-console.log(user[0].name[0]);
+console.log(users[0].name[0]);
 
-console.log(user[0].lessonCompleted.map((lesson) => lesson * 3));
+console.log(users[0].lessonCompleted.map((lesson) => lesson * 3));
 
-const addUser = (
-  email,
-  password,
-  name,
-  discord,
-  subscription,
-  lessonCompleted
-) => {
-  user.push({
-    email: email,
-    password: password,
-    name: name,
-    discord: discord,
-    subscription: subscription,
-    lessonCompleted: lessonCompleted,
-  });
+const addUser = (user) => {
+  users.push(user);
 };
 
-addUser(
-  `mustafa.akdemir24@gmail.com`,
-  `Tes1234`,
-  `Mustafa Akdemir`,
-  `mustafaakdemir24`,
-  `VPI+`,
-  [1, 2, 3, 4]
-);
+addUser({
+  email: `mustafa.akdemir24@gmail.com`,
+  password: `Tes1234`,
+  name: `Mustafa Akdemir`,
+  discord: `mustafaakdemir24`,
+  subscription: `VPI+`,
+  lessonCompleted: [1, 2, 3, 4],
+});
 
-console.log(user[2].name);
+console.log(users[2].lessonCompleted);
